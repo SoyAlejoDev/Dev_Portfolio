@@ -37,7 +37,7 @@
     <body>
         <header>
         <!-- titulo -->
-<h1>Portfolio SoyAlejoDev</h1>
+<h1>Portfolio @SoyAlejoDev</h1>
 
 <nav>
     <!-- enlaces internos -->
@@ -52,7 +52,27 @@
 
 </nav>
 </header>
+<!-- dialog y modal con js -->
+<!-- <dialog id="dialog">
+<h1>sabias que puedes abrir un modal asi</h1>
+<p>y es totalmente nativo</p>
+<button id="hide">cerrar el modal</button>
+</dialog>
 
+<button id="show">ver mas informacion</button>
+
+<script>
+window.show.addEventListener('click',()=>{
+    window.dialog.showModal()
+})
+window.hide.addEventListener('click',()=>{
+    window.dialog.close()
+}) -->
+</script>
+<!-- etiquetas audio y video -->
+<!-- <video controls src="vs_cursor.mp4" width="200px"></video>
+<audio  controls src="001 Piloto Podcast DevTalles.mp3" width="200px"></audio> -->
+   
  <main>
 <p>+ 2 annos de experiencia como <strong>full stack</strong> software developer. Graduado de <strong>Ingeniero en Ciencias Informaticas</strong> en la Universidad de Ciencias Informaticas(UCI) en Cuba.</p>
 
@@ -62,19 +82,21 @@
     <li class="list-item">FreeLancer-2023</li>
 </ul>
 <!-- foto -->
-<img src="/xfce-leaves.svg" 
+<a download href="/xfce-leaves.svg ">
+<img loading="lazy" src="/xfce-leaves.svg" 
 alt="una foto al berro" 
 title="foto al berro"
 width="100"
 height="100"
 id="photo-image"
 >
+</a>
 <h2 id="proyectos">Proyectos realizados</h2>
 <aside>
     <header>
         <h3>Mis tecnologias favoritas</h3>
     </header>
-    <ol>
+    <ol type="A">
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
@@ -82,15 +104,86 @@ id="photo-image"
         <li>REACT</li>
     </ol>
 </aside>
+
 <section>
-    <article>
-        <header>
-            <h4></h4>
-        </header>
-    </article>
+    <h2>Preguntas frecuentes</h2>
+    <details open>
+        <summary>Que estudios tienes?</summary>
+        <p>Estudie como un tanque abakua en la uci por 5 largos years</p>
+    </details>
+    <details>
+        <summary>Cuales son tus hobby?</summary>
+        <p>Masturbarme</p>
+    </details>
+</section>
+<section>
+    <h2>Formulario de Contacto</h2>
+    <form method="post" action="/">
+        <fieldset>
+            <legend>informacion personal</legend>
+            <div>
+            <label >nombre: 
+            <input type="text"  name="name"
+            placeholder="AlejoDev"
+            required
+            >
+        </div>
+        </label>
+        <label >email: 
+            <input type="email"  name="email"
+            placeholder="correo@gmail.com"
+            required
+            >
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Informacion adicional</legend>
+            <div>
+                <label for="phone">
+                    telefono:
+                    <input type="tel" id="phone" name="phone"
+                    placeholder="AlejoDev"
+                    required
+                    >
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
+            <div>
+                <label for="why">
+                    Porque quieres contactarnos?
+                </label>
+                <select name="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Duda</option>
+                    <option value="3">Mas info</option>
+                </select>
+            </div>
+            <div>
+                <label for="terms">Aceptas los terminos?</label>
+                <input type="checkbox" id="terms" name="terms" required>
+            </div>
+            <div>
+            <datalist id="languages">
+                <option value="js"></option>
+                <option value="java"></option>
+                <option value="c#"></option>
+            </datalist>
+            <label for="">
+                Con cual te ayudamos?
+                <input list="languages">
+            </label>
+            </div>
+        </fieldset>
+        <input type="submit" value="enviar contacto">
+    </form>
 </section>
 </main>
 <footer>
+    <div>
+        <a href="mailto:diazperezalejandro26@gmail.com">enviame un correo</a>
+    </div>
     Copyright @ 2024 Ahh! q lindo
 </footer>
     </body>
